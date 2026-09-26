@@ -77,6 +77,8 @@ senão:
 
 Isso substitui recomputação por recuperação de procedimento, mas o custo de interpretar, consultar dados e verificar ainda existe.
 
+Para a formulação detalhada de decomposição, precisão estrutural e resposta imediata, consulte [`docs/01-fundamentos/02-decomposicao-resposta-instantanea.md`](01-fundamentos/02-decomposicao-resposta-instantanea.md).
+
 ## Segurança epistemológica
 
 Toda resposta deve indicar, internamente:

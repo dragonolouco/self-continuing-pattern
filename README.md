@@ -24,6 +24,7 @@ A mesma ideia pode ser aplicada, com diferentes graus de formalização, a:
 |---|---|
 | [`docs/00-visao-geral.md`](docs/00-visao-geral.md) | Tese, vocabulário e limites da proposta |
 | [`docs/01-fundamentos/`](docs/01-fundamentos/) | Primitivas, estado, composição e verificação |
+| [`docs/01-fundamentos/02-decomposicao-resposta-instantanea.md`](docs/01-fundamentos/02-decomposicao-resposta-instantanea.md) | Decomposição, precisão estrutural e execução de baixa latência |
 | [`docs/02-motores/`](docs/02-motores/) | Aritmética e execução passo a passo |
 | [`docs/03-aplicacoes/`](docs/03-aplicacoes/) | Programação, linguagem, dados e outros domínios |
 | [`docs/04-memoria/`](docs/04-memoria/) | Memória de métodos, acertos, erros e variantes |
@@ -45,8 +46,14 @@ entrada
   -> verificar invariantes
   -> repetir
   -> recompor o resultado
-  -> registrar sucesso ou falha reutilizável
+    -> registrar sucesso ou falha reutilizável
 ```
+
+## Decompor para responder rapidamente
+
+Esta arquitetura transforma uma entrada grande em unidades menores, aplica uma estrutura já validada e recompõe o resultado. Quando o conhecimento, as regras e as verificações estão corretos, a resposta pode ser produzida com latência muito baixa e alta precisão no domínio formalizado. O mecanismo não precisa inventar tudo do zero: ele reutiliza métodos, estados e correções estruturadas.
+
+Leia a explicação completa em [`docs/01-fundamentos/02-decomposicao-resposta-instantanea.md`](docs/01-fundamentos/02-decomposicao-resposta-instantanea.md).
 
 ## Protótipo rápido
 

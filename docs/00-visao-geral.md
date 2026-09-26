@@ -41,6 +41,12 @@ resposta isolada:       entrada X -> saída Y
 estrutura reutilizável: tipo + estado + regra + composição -> muitas saídas
 ```
 
+## Decomposição e resposta rápida
+
+Quando a entrada é decomposta corretamente, uma ferramenta pode aplicar um método validado sem reconstruir a solução inteira. A precisão depende de conhecimento correto, estrutura correta, regra correta e verificação correta. Em domínios formalizados, isso permite respostas exatas e de baixa latência; o tamanho da entrada pode aumentar sem exigir novas regras fundamentais.
+
+Essa ideia também pode ser investigada para palavras, letras, significados, documentos, programas e dados. O fato de uma arquitetura ainda não estar explícita não significa necessariamente que ela não exista: pode ser necessário descobrir suas unidades, relações, estados e transições.
+
 ## Aprender sem guardar tudo
 
 Neste projeto, aprender pode significar:
