@@ -66,3 +66,5 @@ tentativa -> resultado -> diagnóstico -> correção -> teste
 ```
 
 Isso evita pensar tudo do zero, mas não elimina a necessidade de testar o método em entradas novas.
+
+Para a visão mais ampla de como chaves conceituais substituem respostas memorizadas e permitem adaptação, consulte [`02-aprendizado-por-metodos.md`](02-aprendizado-por-metodos.md).

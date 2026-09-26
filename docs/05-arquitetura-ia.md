@@ -58,6 +58,19 @@ classificador/roteador de tarefa
 - produzir rastreamento auditável;
 - repetir métodos sem variação desnecessária.
 
+## Modelo adaptativo por chaves conceituais
+
+O sistema pode aprender estruturas em vez de respostas isoladas. Uma chave identifica domínio, tipos, objetivo, estado e restrições; a partir dela, o roteador compara métodos existentes, executa o mais compatível e verifica o resultado.
+
+```text
+informação -> estruturar -> comparar -> executar -> verificar
+                              |                    |
+                              |                    +--> método validado
+                              +------------------------- erro/correção
+```
+
+Se já existe uma chave confiável, a resposta é uma execução direta. Se existe composição, o sistema combina métodos. Se não existe método, ele entra em descoberta e só armazena a nova estrutura depois de testar. A especificação detalhada está em [`docs/04-memoria/02-aprendizado-por-metodos.md`](04-memoria/02-aprendizado-por-metodos.md).
+
 ## Pesos úteis versus pesos inúteis
 
 O objetivo não é simplesmente “ter poucos pesos”. É reduzir parâmetros usados para tarefas que possuem solução explícita. Pesos continuam úteis para generalização, percepção e ambiguidade. A otimização consiste em direcionar cada subproblema para o mecanismo adequado.
