@@ -25,13 +25,14 @@ A mesma ideia pode ser aplicada, com diferentes graus de formalização, a:
 | [`docs/00-visao-geral.md`](docs/00-visao-geral.md) | Tese, vocabulário e limites da proposta |
 | [`docs/01-fundamentos/`](docs/01-fundamentos/) | Primitivas, estado, composição e verificação |
 | [`docs/01-fundamentos/02-decomposicao-resposta-instantanea.md`](docs/01-fundamentos/02-decomposicao-resposta-instantanea.md) | Decomposição, precisão estrutural e execução de baixa latência |
+| [`docs/01-fundamentos/03-arquitetura-universal-por-camadas.md`](docs/01-fundamentos/03-arquitetura-universal-por-camadas.md) | Camadas universais e exemplo de países/letras |
 | [`docs/02-motores/`](docs/02-motores/) | Aritmética e execução passo a passo |
 | [`docs/03-aplicacoes/`](docs/03-aplicacoes/) | Programação, linguagem, dados e outros domínios |
 | [`docs/04-memoria/`](docs/04-memoria/) | Memória de métodos, acertos, erros e variantes |
 | [`docs/05-arquitetura-ia.md`](docs/05-arquitetura-ia.md) | Proposta de modelo híbrido leve e roteamento |
 | [`docs/06-limites-e-metricas.md`](docs/06-limites-e-metricas.md) | O que medir, riscos e limites das afirmações |
 | [`examples/`](examples/) | Exemplos de estruturas, regras e fluxos |
-| [`src/`](src/) | Protótipo mínimo executável |
+| [`src/`](src/) | Protótipo aritmético e motor de consultas textuais |
 | [`tests/`](tests/) | Testes automatizados das invariantes básicas |
 
 ## Princípio operacional
