@@ -1,0 +1,20 @@
+flowchart TD
+    A[Informação ou objetivo novo] --> B[Identificar conceitos]
+    B --> C[Gerar chave]
+    C --> D[Comparar com métodos]
+    D --> E{Compatibilidade}
+    E -->|Alta| F[Executar método conhecido]
+    E -->|Parcial| G[Compor métodos]
+    E -->|Nenhuma| H[Sintetizar hipótese]
+    F --> I[Verificar]
+    G --> I
+    H --> J[Testar em casos]
+    J -->|Falha| K[Diagnosticar causa]
+    K --> L[Registrar padrão de erro]
+    L --> H
+    J -->|Sucesso| I
+    I -->|Passou| M[Registrar evidência]
+    I -->|Falhou| K
+    M --> N[Versionar método]
+    N --> O[Reutilizar em variantes]
+    O --> D

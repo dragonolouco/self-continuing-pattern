@@ -1,0 +1,24 @@
+flowchart LR
+    A[Letras] --> B[Tokens]
+    B --> C[Palavra]
+    C --> D[Conceito]
+    D --> E[Atributos]
+    D --> F[Relações]
+    F --> G[Subcadeias]
+    G --> H[Contexto]
+    H --> I[Interpretação]
+
+    J[jogo] --> K[possui regras]
+    J --> L[possui objetivo]
+    J --> M[possui mecânicas]
+    J --> N[pode ter gênero]
+    N --> O[terror]
+    N --> P[aventura]
+    M --> Q[exploração]
+
+    R[Frase: jogo de terror com exploração] --> S[entidade: jogo]
+    R --> T[gênero: terror]
+    R --> U[mecânica: exploração]
+    S --> V[Representação intermediária]
+    T --> V
+    U --> V

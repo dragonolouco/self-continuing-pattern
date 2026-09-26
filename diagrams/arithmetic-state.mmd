@@ -1,0 +1,12 @@
+flowchart LR
+    A[Casa atual] --> B[ Ler dígito A ]
+    B --> C[ Ler dígito B ]
+    C --> D[ Ler transporte]
+    D --> E[ total = A + B + transporte ]
+    E --> F[ escrito = total mod 10 ]
+    E --> G[ novo transporte = floor total / 10 ]
+    F --> H[ Guardar dígito ]
+    G --> I{Mais casas?}
+    I -->|Sim| A
+    I -->|Não| J[Anexar transporte final]
+    J --> K[Verificar resultado]

@@ -46,3 +46,7 @@ Comparar com um modelo neural exige fixar:
 7. medir contra implementações de referência;
 8. integrar um modelo leve apenas para interpretação e descoberta;
 9. testar generalização, regressões e falsos reconhecimentos.
+
+## Referências comparativas
+
+O projeto foi comparado com IA simbólica, grafos de conhecimento e ontologias, síntese de programas, arquiteturas cognitivas, aprendizagem contínua e IA neuro-simbólica. A comparação completa, com fontes externas e recomendações de implementação, está em [`docs/07-ciencia-e-arquiteturas-relacionadas.md`](07-ciencia-e-arquiteturas-relacionadas.md).

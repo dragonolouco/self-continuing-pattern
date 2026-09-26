@@ -34,7 +34,10 @@ A mesma ideia pode ser aplicada, com diferentes graus de formalização, a:
 | [`docs/05-arquitetura-ia.md`](docs/05-arquitetura-ia.md) | Proposta de modelo híbrido leve e roteamento |
 | [`docs/05-chave-conceitual-e-sintese.md`](docs/05-chave-conceitual-e-sintese.md) | Recuperação, composição e síntese de métodos por chave |
 | [`docs/06-limites-e-metricas.md`](docs/06-limites-e-metricas.md) | O que medir, riscos e limites das afirmações |
+| [`docs/07-ciencia-e-arquiteturas-relacionadas.md`](docs/07-ciencia-e-arquiteturas-relacionadas.md) | Comparação com IA simbólica, KGs, síntese, Soar/ACT-R e IA neuro-simbólica |
 | [`examples/`](examples/) | Exemplos de estruturas, regras e fluxos |
+| [`diagrams/`](diagrams/) | Diagramas Mermaid editáveis e PNGs renderizados |
+| [`schemas/`](schemas/) | Contratos JSON para chaves, métodos e erros |
 | [`src/`](src/) | Protótipos aritmético, textual e de conhecimento de palavras |
 | [`tests/`](tests/) | Testes automatizados das invariantes básicas |
 
@@ -58,6 +61,10 @@ entrada
 Esta arquitetura transforma uma entrada grande em unidades menores, aplica uma estrutura já validada e recompõe o resultado. Quando o conhecimento, as regras e as verificações estão corretos, a resposta pode ser produzida com latência muito baixa e alta precisão no domínio formalizado. O mecanismo não precisa inventar tudo do zero: ele reutiliza métodos, estados e correções estruturadas.
 
 Leia a explicação completa em [`docs/01-fundamentos/02-decomposicao-resposta-instantanea.md`](docs/01-fundamentos/02-decomposicao-resposta-instantanea.md).
+
+## Diagramas
+
+Os desenhos da arquitetura estão em [`diagrams/README.md`](diagrams/README.md). Eles mostram a arquitetura geral, a camada de palavras, o ciclo adaptativo e a soma por estados. Cada desenho possui uma fonte Mermaid editável e uma versão PNG renderizada.
 
 ## Protótipo rápido
 

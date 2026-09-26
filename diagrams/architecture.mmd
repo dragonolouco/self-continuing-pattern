@@ -1,0 +1,28 @@
+flowchart TB
+    A[Entrada] --> B[Interpretar e tipar]
+    B --> C[Decompor em unidades]
+    C --> D[Chave conceitual]
+    D --> E{Método conhecido?}
+    E -->|Sim| F[Compor método]
+    E -->|Não| G[Descobrir hipótese]
+    F --> H[Executar transições]
+    G --> I[Testar e comparar]
+    I -->|Falha| J[Registrar erro e corrigir]
+    J --> G
+    I -->|Sucesso| H
+    H --> K[Atualizar estado]
+    K --> L[Verificar invariantes]
+    L -->|Inválido| J
+    L -->|Válido| M[Recompor resposta]
+    M --> N[Armazenar método e evidência]
+    N --> O[Resposta auditável]
+
+    subgraph Camadas[Camadas de conhecimento]
+      P[Caracteres e símbolos]
+      Q[Palavras e conceitos]
+      R[Entidades e relações]
+      S[Regras e métodos]
+      T[Contexto e intenção]
+    end
+    P --> Q --> R --> S --> T
+    T -. fornece chave .-> D

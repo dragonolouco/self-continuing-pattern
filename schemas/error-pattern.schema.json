@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/dragonolouco/self-continuing-pattern/schemas/error-pattern.schema.json",
+  "title": "ErrorPattern",
+  "type": "object",
+  "required": ["id", "symptoms", "cause", "correction", "prevention", "evidence"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "symptoms": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "context": {"type": "object", "additionalProperties": true},
+    "cause": {"type": "string", "minLength": 1},
+    "correction": {"type": "string", "minLength": 1},
+    "prevention": {"type": "string", "minLength": 1},
+    "variants": {"type": "array", "items": {"type": "string"}},
+    "evidence": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "status": {"enum": ["observed", "tested", "validated", "deprecated", "quarantined"]}
+  },
+  "additionalProperties": false
+}
