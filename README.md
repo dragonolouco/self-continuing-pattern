@@ -1,1 +1,85 @@
-# self-continuing-pattern
+# Self-Continuing Pattern
+
+Arquitetura de inteligência baseada em **regras fundamentais, composição, estado, verificação e memória de métodos/erros**.
+
+> **Ideia central:** um sistema não precisa memorizar todas as respostas. Ele precisa conhecer unidades básicas, saber aplicar transformações locais, manter o estado correto e reutilizar estruturas que já foram verificadas.
+
+## O que este repositório investiga
+
+Esta é uma proposta de arquitetura para tarefas que podem ser decompostas em operações menores e repetíveis. O exemplo mais simples é a soma decimal: com apenas os algarismos de `0` a `9`, a regra do transporte e uma execução da direita para a esquerda, o sistema consegue somar números com qualquer quantidade de casas limitada apenas pelo tempo e pela memória disponíveis.
+
+A mesma ideia pode ser aplicada, com diferentes graus de formalização, a:
+
+- matemática e cálculo exato;
+- validação, parsing e transformação de dados;
+- programação por componentes reutilizáveis;
+- consulta estruturada a conhecimento;
+- planejamento com estados e pré-condições;
+- diagnóstico e correção de erros;
+- sistemas híbridos que usam modelos aprendidos somente onde há ambiguidade ou descoberta.
+
+## Estrutura do repositório
+
+| Categoria | Conteúdo |
+|---|---|
+| [`docs/00-visao-geral.md`](docs/00-visao-geral.md) | Tese, vocabulário e limites da proposta |
+| [`docs/01-fundamentos/`](docs/01-fundamentos/) | Primitivas, estado, composição e verificação |
+| [`docs/02-motores/`](docs/02-motores/) | Aritmética e execução passo a passo |
+| [`docs/03-aplicacoes/`](docs/03-aplicacoes/) | Programação, linguagem, dados e outros domínios |
+| [`docs/04-memoria/`](docs/04-memoria/) | Memória de métodos, acertos, erros e variantes |
+| [`docs/05-arquitetura-ia.md`](docs/05-arquitetura-ia.md) | Proposta de modelo híbrido leve e roteamento |
+| [`docs/06-limites-e-metricas.md`](docs/06-limites-e-metricas.md) | O que medir, riscos e limites das afirmações |
+| [`examples/`](examples/) | Exemplos de estruturas, regras e fluxos |
+| [`src/`](src/) | Protótipo mínimo executável |
+| [`tests/`](tests/) | Testes automatizados das invariantes básicas |
+
+## Princípio operacional
+
+```text
+entrada
+  -> interpretar e tipar
+  -> decompor em unidades
+  -> selecionar regra ou método
+  -> executar uma transição
+  -> atualizar o estado
+  -> verificar invariantes
+  -> repetir
+  -> recompor o resultado
+  -> registrar sucesso ou falha reutilizável
+```
+
+## Protótipo rápido
+
+O protótipo implementa soma e subtração decimal por dígitos, sem converter o número inteiro para uma operação nativa. Ele expõe os estados intermediários e valida o resultado:
+
+```bash
+python3 -m unittest discover -s tests -v
+python3 -m src.fundamental_engine
+```
+
+## Formulação compacta
+
+```text
+capacidade
+= conhecimento fundamental
++ primitivas
++ estado
++ regras de composição
++ métodos reutilizáveis
++ verificação
++ memória de erros
++ acesso a conhecimento externo
++ adaptação
+```
+
+## Posicionamento técnico
+
+A proposta não afirma que regras manuais substituem toda aprendizagem. Tarefas determinísticas podem ser executadas com grande previsibilidade e baixo custo por operação. Já interpretação aberta, percepção, contexto implícito e descoberta de estruturas novas podem exigir modelos aprendidos, bases externas ou ambos.
+
+Também não é correto prometer que será “mais rápido que qualquer modelo” sem especificar tarefa, hardware e métrica. A hipótese testável deste projeto é mais precisa:
+
+> **Para tarefas estruturadas, repetitivas e verificáveis, uma arquitetura especializada pode reduzir latência, memória, custo e variação em comparação com gerar uma resposta do zero.**
+
+## Estado do projeto
+
+Este repositório começa como uma especificação executável: a documentação descreve a arquitetura e o protótipo testa o núcleo mais simples. A evolução deve ser orientada por testes, benchmarks e exemplos reproduzíveis, não apenas por afirmações conceituais.

@@ -1,0 +1,18 @@
+{
+  "method": {
+    "id": "incrementar_contador",
+    "version": 1,
+    "preconditions": ["contador_existe", "contador_eh_inteiro"],
+    "steps": ["ler_estado", "somar_1", "atualizar_estado", "renderizar"],
+    "postconditions": ["novo_valor == valor_anterior + 1"],
+    "verification": ["novo_valor - valor_anterior == 1"]
+  },
+  "error_pattern": {
+    "id": "evento_antes_da_criacao",
+    "symptoms": ["evento_nao_dispara"],
+    "cause": "elemento_inexistente_no_momento_do_bind",
+    "correction": "criar_elemento_antes_de_registrar_evento",
+    "prevention": "verificar_existencia_antes_de_conectar",
+    "variants": ["seletor_incorreto", "ordem_de_inicializacao_invalida"]
+  }
+}
