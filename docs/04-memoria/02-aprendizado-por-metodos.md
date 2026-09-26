@@ -45,6 +45,8 @@ receber informação
 
 O sistema não precisa pensar longamente quando já existe uma chave compatível. Ele recupera o método, aplica os dados e verifica. O esforço maior acontece quando não há método adequado; nesse caso, entra em descoberta.
 
+Uma chave pode resultar em três operações diferentes: consultar uma relação pronta, compor métodos existentes ou sintetizar uma sequência nova e testá-la. A diferença entre esses níveis é importante para medir velocidade, custo e risco.
+
 ## Evolução sem ajuda passo a passo
 
 Uma arquitetura pode evoluir automaticamente no sentido operacional de:

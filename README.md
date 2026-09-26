@@ -32,6 +32,7 @@ A mesma ideia pode ser aplicada, com diferentes graus de formalização, a:
 | [`docs/04-memoria/`](docs/04-memoria/) | Memória de métodos, acertos, erros e variantes |
 | [`docs/04-memoria/02-aprendizado-por-metodos.md`](docs/04-memoria/02-aprendizado-por-metodos.md) | Chaves conceituais, adaptação e descoberta verificável |
 | [`docs/05-arquitetura-ia.md`](docs/05-arquitetura-ia.md) | Proposta de modelo híbrido leve e roteamento |
+| [`docs/05-chave-conceitual-e-sintese.md`](docs/05-chave-conceitual-e-sintese.md) | Recuperação, composição e síntese de métodos por chave |
 | [`docs/06-limites-e-metricas.md`](docs/06-limites-e-metricas.md) | O que medir, riscos e limites das afirmações |
 | [`examples/`](examples/) | Exemplos de estruturas, regras e fluxos |
 | [`src/`](src/) | Protótipos aritmético, textual e de conhecimento de palavras |

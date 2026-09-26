@@ -71,6 +71,8 @@ informação -> estruturar -> comparar -> executar -> verificar
 
 Se já existe uma chave confiável, a resposta é uma execução direta. Se existe composição, o sistema combina métodos. Se não existe método, ele entra em descoberta e só armazena a nova estrutura depois de testar. A especificação detalhada está em [`docs/04-memoria/02-aprendizado-por-metodos.md`](04-memoria/02-aprendizado-por-metodos.md).
 
+Essa visão é detalhada em [`docs/05-chave-conceitual-e-sintese.md`](05-chave-conceitual-e-sintese.md), que separa consulta, composição e síntese de novos métodos.
+
 ## Pesos úteis versus pesos inúteis
 
 O objetivo não é simplesmente “ter poucos pesos”. É reduzir parâmetros usados para tarefas que possuem solução explícita. Pesos continuam úteis para generalização, percepção e ambiguidade. A otimização consiste em direcionar cada subproblema para o mecanismo adequado.
