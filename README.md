@@ -28,11 +28,12 @@ A mesma ideia pode ser aplicada, com diferentes graus de formalização, a:
 | [`docs/01-fundamentos/03-arquitetura-universal-por-camadas.md`](docs/01-fundamentos/03-arquitetura-universal-por-camadas.md) | Camadas universais e exemplo de países/letras |
 | [`docs/02-motores/`](docs/02-motores/) | Aritmética e execução passo a passo |
 | [`docs/03-aplicacoes/`](docs/03-aplicacoes/) | Programação, linguagem, dados e outros domínios |
+| [`docs/03-aplicacoes/02-camada-de-palavras-e-significados.md`](docs/03-aplicacoes/02-camada-de-palavras-e-significados.md) | Palavras, relações, cadeias de conceitos e contexto |
 | [`docs/04-memoria/`](docs/04-memoria/) | Memória de métodos, acertos, erros e variantes |
 | [`docs/05-arquitetura-ia.md`](docs/05-arquitetura-ia.md) | Proposta de modelo híbrido leve e roteamento |
 | [`docs/06-limites-e-metricas.md`](docs/06-limites-e-metricas.md) | O que medir, riscos e limites das afirmações |
 | [`examples/`](examples/) | Exemplos de estruturas, regras e fluxos |
-| [`src/`](src/) | Protótipo aritmético e motor de consultas textuais |
+| [`src/`](src/) | Protótipos aritmético, textual e de conhecimento de palavras |
 | [`tests/`](tests/) | Testes automatizados das invariantes básicas |
 
 ## Princípio operacional

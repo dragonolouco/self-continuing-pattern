@@ -50,6 +50,8 @@ O algoritmo percorre a base, normaliza o nome e executa uma comparação de cara
 
 Esse mecanismo não precisa ter uma resposta pronta para cada pergunta. Ele reutiliza a mesma estrutura mudando apenas os parâmetros: país, cidade, palavra, documento ou código; contém, não contém, começa com ou termina com.
 
+Para a camada seguinte, em que palavras carregam conceitos e relações, consulte [`02-camada-de-palavras-e-significados.md`](02-camada-de-palavras-e-significados.md).
+
 ## Dados
 
 Um pipeline de dados pode ser representado por:

@@ -1,0 +1,15 @@
+{
+  "term": "jogo",
+  "definition": "atividade estruturada com regras e objetivo",
+  "category": "atividade",
+  "relations": {
+    "possui": ["regras", "objetivo", "mecânicas"],
+    "pode_ter": ["terror", "aventura", "estratégia"]
+  },
+  "phrase": {
+    "input": "jogo de terror com exploração",
+    "entity": "jogo",
+    "genre": "terror",
+    "mechanic": "exploração"
+  }
+}

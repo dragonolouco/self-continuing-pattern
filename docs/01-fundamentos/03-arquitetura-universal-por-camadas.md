@@ -70,6 +70,14 @@ letras -> tokens -> palavras -> entidades -> relações -> contexto -> intençã
 
 Cada camada precisa declarar o que conhece e como verifica suas conclusões. “Recife contém a letra R” é uma comparação direta. “Recife é uma cidade” depende de conhecimento estruturado. “Recife é a melhor escolha” depende de critérios, dados e definição de melhor.
 
+Para palavras, uma cadeia pode ser expandida sem abandonar a mesma arquitetura:
+
+```text
+palavra -> conceito -> atributos -> relações -> subcadeias -> contexto -> interpretação
+```
+
+Exemplo: `jogo -> possui -> mecânicas -> exploração` e `jogo -> pode_ter -> gênero -> terror`. A frase combina essas relações em uma representação intermediária, em vez de depender de uma resposta memorizada para cada frase possível. Consulte [`docs/03-aplicacoes/02-camada-de-palavras-e-significados.md`](../03-aplicacoes/02-camada-de-palavras-e-significados.md).
+
 ## Regra geral
 
 ```text
